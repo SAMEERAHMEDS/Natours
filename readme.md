@@ -1,6 +1,8 @@
 # Natours Application
 
-Built using modern technologies: node.js, express, mongoDB, mongoose and others.
+The tour booking website is an online platform that allows users to book their favorite tours. The website is built using various technologies such as Node.js, Express, Mongoose, and MongoDB.
+
+The website allows users to search for tours based on various criteria such as location, activity, price, and duration. Users can also view tour details such as duration, places, amount, and reviews. Once the user has selected a tour, they can proceed to make a booking and payment through the website.
 
 # Setting Up Local Environment To Run The Application
 
