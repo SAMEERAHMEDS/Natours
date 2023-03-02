@@ -162,6 +162,7 @@ tourSchema.pre('save', function (next) {
 //QUERY MIDDLEWARE
 // tourSchema.pre('find', function (next) {
 // (----------- using regular expression so that find, findById and other queries can be executed -----------)
+
 tourSchema.pre(/^find/, function (next) {
   this.find({ secretTour: { $ne: true } });
 
@@ -177,10 +178,10 @@ tourSchema.pre(/^find/, function (next) {
   next();
 });
 
-tourSchema.post(/^find/, function (docs, next) {
-  console.log(`Query took ${Date.now() - this.start} milliseconds!`);
-  next();
-});
+// tourSchema.post(/^find/, function (docs, next) {
+//   console.log(`Query took ${Date.now() - this.start} milliseconds!`);
+//   next();
+// });
 
 //AGGREGATION MIDDLEWARE
 // tourSchema.pre('aggregate', function (next) {
